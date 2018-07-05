@@ -15,5 +15,5 @@ void main()
       printf("no");
    }
    else
-   printf("Invalid Input");
+   printf("Invalid input");
 }
