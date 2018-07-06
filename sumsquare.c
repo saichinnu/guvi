@@ -3,7 +3,7 @@ void main()
 {
    long int n,a,s=0;
    scanf("%ld",&n);
-   if(n>=1&&n<=1000000000000000000)
+   if(n>=1&&n<=10000)
    {
    while(n!=0)
    {
