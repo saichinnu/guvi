@@ -1,0 +1,50 @@
+#include<stdio.h>
+int main()
+{
+   int n,a[40],b[40],i,j,s,c=0;
+   scanf("%d",&n);
+   for(i=0;i<n;i++)
+   {
+   scanf("%d",&a[i]);
+   b[i]=a[i];
+   }
+   for(i=0;i<n;i++)
+   {
+      for(j=i+1;j<n;j++)
+      {
+        if(a[i]>a[j])
+        {
+          s=a[i];
+          a[i]=a[j];
+          a[j]=s;
+        }
+      }
+   }
+   j=0;
+   for(j=0;j<n;j++)
+   {
+     i=0;
+     if(c==0)
+     {
+        while(i<n)
+        {
+         if(b[j]==a[i])
+         {
+         printf("%d",i+1);
+         c++;
+         }
+         i++;
+        }
+     }
+     else
+     { 
+        while(i<n)
+        {
+         if(b[j]==a[i])
+         printf(" %d",i+1);
+         i++;
+        }
+     }
+   }     
+   return 0;
+}
