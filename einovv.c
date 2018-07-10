@@ -1,11 +1,9 @@
 #include<stdio.h>
-void main()
+int main()
 {
-   long int n,i,a[100];
+   int n,i,a[100];
    scanf("%d",&n);
-   if(n>=1&&n<=100000)
-   {
-      for(i=0;i<n;i++)
+   for(i=0;i<n;i++)
       {
         scanf("%d",&a[i]);
       }
@@ -22,7 +20,5 @@ void main()
              printf("%d ",a[i]);
          }
       }
-   }
-   else
-   printf("invalid input");
+   return 0;
 }
