@@ -7,6 +7,7 @@ int main()
 	{
 	    scanf("%d",&a[i]);
 	}
+	s=a[0];
 	for(i=0;i<n-1;i++)
         {
            if(a[i]<a[i+1])
