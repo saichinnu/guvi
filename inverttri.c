@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main()
 { 
   int n,i,j;
@@ -13,6 +14,8 @@ int main()
       }
       else
       printf(" 1");
+      if(i==n)
+      exit(0);
     }
     printf("\n");
   }
