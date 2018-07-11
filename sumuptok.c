@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
    int k,n,a[60],i,s=0;
    scanf("%d%d",&n,&k);
@@ -12,4 +12,5 @@ void main()
      s=s+a[i];
    }
    printf("%d",s);
+  return 0;
 }
