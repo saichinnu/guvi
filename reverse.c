@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
    int n,a,c=0;
    scanf("%d",&n);
@@ -9,5 +9,6 @@ void main()
      c=(c*10)+a;
      n=n/10;
    }
-   printf("%d",c);
+    printf("%d",c);
+   return 0;
 }
