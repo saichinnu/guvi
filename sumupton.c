@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
     int n,i,sum=0;
     scanf("%d",&n);
@@ -8,4 +8,5 @@ void main()
        sum=sum+i; 
     }
     printf("%d",sum);
+    return 0;
 }
