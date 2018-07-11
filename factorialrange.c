@@ -1,16 +1,12 @@
 #include<stdio.h>
-void main()
+int main()
 {
- double n,i=1,c; 
-  scanf("%lf",&n); 
-  if(n<=20)
-  {
+ int n,i=1,c; 
+  scanf("%d",&n); 
   for(c=1;c<=n;c++)
   {
     i=i*c;
   } 
-  printf("%.lf",i);
-  }
-  else
-  printf("Invalid Input");
+  printf("%d",i);
+ return 0;
 }
