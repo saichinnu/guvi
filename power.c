@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
     int a,b,i,s=1;
     scanf("%d%d",&a,&b);
@@ -8,4 +8,5 @@ void main()
        s=s*a;  
     }
     printf("%d",s);
+    return 0;
 }
