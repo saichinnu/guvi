@@ -10,16 +10,13 @@ int main()
      scanf("%d",&a[i][j]);
    }
    }
-   for(i=0;i<n;i++)
+   i=0,j=n-1;
+   while(i!=n)
    {
-      for(j=0;j<n;j++)
-      {
-         if(i==j)
-         {
-           s=s+a[i][j];
-         } 
-      }
-   } 
+     s=s+a[i][j];
+     i++;
+     j--;
+   }
    printf("%d",s);
    return 0;
 }
