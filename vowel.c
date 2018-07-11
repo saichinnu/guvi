@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main()
+int main()
 {
     char c;
     int i,j;
@@ -15,4 +15,5 @@ void main()
     }
     else
     printf("invalid");
+    return 0;
 }
