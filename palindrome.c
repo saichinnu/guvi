@@ -1,10 +1,8 @@
 #include<stdio.h>
-void main()
+int main()
 {
    int a,b,c=0,n,g;
    scanf("%d",&n);
-   if(n<=1000)
-   {
    a=n;
    while(n!=0)
    {
@@ -16,7 +14,5 @@ void main()
    printf("yes");
    else
    printf("no");
-   }
-   else
-   printf("invalid input");
+   return 0;
 }
