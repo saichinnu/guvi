@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main()
+int main()
 {
         double number;
         scanf("%lf", &number);
@@ -7,6 +7,9 @@ void main()
         printf("Zero");
         else if(number>0.0)
         printf("Positive");
-        else
+        else if(number<0.0)
         printf("Negative");
+        else
+        printf("Invalid Input");
+        return 0;
 }
