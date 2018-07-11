@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main()
+int main()
 {
         long int number;
         scanf("%ld", &number);
@@ -11,5 +11,6 @@ void main()
          printf("Even");
         }
         else
-         printf("Invalid");
+         printf("invalid");
+        return 0;
 }
