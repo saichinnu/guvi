@@ -1,9 +1,7 @@
 #include<stdio.h>
-void main()
+int main()
 {
     long int a,b;
-    if(b<=100000)
-    {
     scanf("%d%d",&a,&b);
     for(a;a<=b;a++)
     {
@@ -13,6 +11,5 @@ void main()
        }
     }
     }
-    else
-    printf("invalid input");
-}
+  return 0;
+ }
