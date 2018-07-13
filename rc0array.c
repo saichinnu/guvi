@@ -1,0 +1,50 @@
+#include<stdio.h>
+int main()
+{
+  int n,k,a[40][40],i,j,s,v,chk=0;
+scanf("%d%d",&n,&k);
+for(i=0;i<n;i++)
+{
+for(j=0;j<k;j++)
+{
+scanf("%d",&a[i][j]);
+}
+}
+for(i=0;i<n;i++)
+{
+for(j=0;j<k;j++)
+{
+if(a[i][j]==0)
+{ 
+s=i;
+v=j;
+for(v=0;v<k;v++)
+{
+a[i][v]=0;
+}
+for(s=0;s<n;s++)
+{ 
+a[s][j]=0; 
+chk=1; 
+}
+}
+if(chk==1)
+break;  
+}
+}
+for(i=0;i<n;i++)
+{
+if(i!=0)
+{
+printf("\n");
+}
+for(j=0;j<k;j++)
+{
+if(j==0)
+printf("%d",a[i][j]);
+else
+printf(" %d",a[i][j]);      
+}
+}
+return 0;
+}
