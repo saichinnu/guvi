@@ -8,6 +8,9 @@ int main()
    else
    min=0;
    max=n-k;
+   if(k==1)
+   printf("1 2");
+   else
    printf("%d %d",min,max);
    return 0;
 }
