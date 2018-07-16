@@ -3,11 +3,12 @@ int main()
 {
     int n,i;
     scanf("%d",&n);
-    printf("1\n");
+    
     for(i=0;i<=n;i++)
     {
       if(i+ss(i)==n)
       { 
+         printf("1\n");
          printf("%d",i);    
       }
     }
