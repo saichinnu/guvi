@@ -37,4 +37,5 @@ int main()
         else
         printf("%s ",str1[i]);
     }
+    return 0;   
 }
