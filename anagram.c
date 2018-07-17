@@ -25,8 +25,7 @@ int main()
              {
                  not_found=1;
                  break;
-             }
-         
+             }         
      }
          if(not_found==1)
          {
@@ -36,7 +35,10 @@ int main()
          {
              printf("yes");
          }
-         
      }
+     else
+      {
+       printf("no");
+      }
    return 0;    
 }
