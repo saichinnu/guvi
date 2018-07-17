@@ -1,38 +1,25 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
 int main()
 {
-    int i,j=0,k=0,x,len;
-    char str[100],str1[10][20],temp;
-    scanf("%[^\n]s",str); 
-    for (i=0;str[i]!='\0';i++)
-    {
-        if (str[i]==' ')
-        {
-            str1[k][j]='\0';
-            k++;
-            j=0;
-        }
-        else
-        {
-            str1[k][j]=str[i];
-            j++;
-        }
+    int n,q,ar[20],x[20],a[20],b[20],i,j,y[20],s,t,gcd;
+    scanf("%d %d",&n,&q);
+    for(i=0;i<n;i++){
+        scanf("%d",&ar[i]);
     }
-    str1[k][j] ='\0'; 
-    for (i=0;i<=k;i++)
-    {
-        len=strlen(str1[i]);
-        for(j=0,x=len-1;j<x;j++,x--)
-        {
-            temp=str1[i][j];
-            str1[i][j]=str1[i][x];
-            str1[i][x]=temp;
-        }
+    for(i=0;i<q;i++){
+        scanf("%d %d",&x[i],&y[i]);
     }
-    for(i=0;i<=k;i++)
-    {
-        printf("%s ", str1[i]);
+    for(i=0;i<q;i++){
+        s=x[i]-1;
+        t=y[i]-1;
+    for(j=1;j<ar[s]+1;j++){
+        if (ar[s]%j==0 && ar[t]%j==0)
+            gcd=j;
+    }
+    if(i==q-1)
+    printf("%d",gcd);
+    else
+    printf("%d\n",gcd);
     }
     return 0;
 }
