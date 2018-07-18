@@ -1,14 +1,9 @@
 #include<stdio.h>
 int main()
 {
-  int n,a[30],i,d=0;
-  scanf("%d",&n);
-  for(i=0;i<n;i++)
-  scanf("%d",&a[i]);
-  for(i=0;i<n;i++)
-  {
-     d=d^a[i];    
-  }
+  int n,i,d;
+  scanf("%d%d",&n,&i);
+  d=n&i;
   printf("%d",d);
   return 0;
 }
