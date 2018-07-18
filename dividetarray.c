@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
    long int n,i,a[90];
    scanf("%d",&n);
@@ -16,4 +16,5 @@ void main()
    }
    else
    printf("Invalid input");
+   return 0;
 }
