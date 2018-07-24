@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() 
 {
-  int n,a[10],i,j,s=0,an;
+       int n,a[10],i,j,s=0,an;
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
@@ -18,8 +18,8 @@ int main()
           a[j]=s;
         }
         }  
-        an=a[n-1]-a[0];
-        printf("%d",an);
     }
+    an=a[n-1]-a[0];
+    printf("%d",an);
   return 0;
 }
