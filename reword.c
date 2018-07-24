@@ -33,10 +33,10 @@ int main()
     for(i=0;i<=k;i++)
     {
         
-        if(i==0)
+        if(i==k)
         printf("%s",str1[i]);
         else
-        printf(" %s",str1[i]);
+        printf("%s ",str1[i]);
     }
    return 0;
 }
