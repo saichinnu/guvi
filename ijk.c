@@ -11,7 +11,7 @@ int main()
       {
           c=a[i]+a[j];
           s=j+1;
-          if(a[i]<a[j])
+          if(i<j)
           {
           while(s<n)
           {
